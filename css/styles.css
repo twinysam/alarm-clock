@@ -1,174 +1,179 @@
+body {
+	background-color: black;
+	color: white;
+}
+
 /* Alarm Clock ---------------------------------------------------------------*/
 .alarm-clock {
-  transition: opacity 0.4s ease-in;
-  opacity: 1;
-  visibility: visible;
+	transition: opacity 0.4s ease-in;
+	opacity: 1;
+	visibility: visible;
 }
 
 .alarm-clock--loading {
-  opacity: 0;
-  visibility: hidden;
+	opacity: 0;
+	visibility: hidden;
 }
 
 .alarm-clock__alarm {
-  float: right;
-  padding: 12px;
+	float: right;
+	padding: 12px;
 }
 
 .alarm-clock__settings {
-  float: right;
-  padding: 12px;
+	float: right;
+	padding: 12px;
 }
 
 /* Alarm -------------------------------------------------------------------- */
 .alarm {
-  color: rgba(0, 0, 0, .87);
-  font-family: 'Source Sans Pro', sans-serif;
+	color: rgba(255, 255, 255, 0.87);
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .alarm--active .alarm__icon {
-  color: #2196f3;
+	color: #2196f3;
 }
 
 .alarm--active .alarm__options {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 64px;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 64px;
 }
 
 .alarm__checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: white;
-  border-radius: 3px;
-  border: 2px solid #2196f3;
-  cursor: pointer;
-  height: 36px;
-  margin: 0 0 0 12px;
-  outline: none !important;
-  vertical-align: -64%;
-  width: 36px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: white;
+	border-radius: 3px;
+	border: 2px solid #2196f3;
+	cursor: pointer;
+	height: 36px;
+	margin: 0 0 0 12px;
+	outline: none !important;
+	vertical-align: -64%;
+	width: 36px;
 }
 
 .alarm__checkbox:checked {
-  background: #2196f3;
+	background: #2196f3;
 }
 
 .alarm__icon {
-  color: rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  float: right;
-  font-size: 24px;
+	color: rgba(255, 255, 255, 0.50);
+	cursor: pointer;
+	float: right;
+	font-size: 24px;
 }
 
 .alarm__icon:hover {
-  color: #2196f3;
+	color: #2196f3;
 }
 
 .alarm__icon--active {
-  color: rgba(0, 0, 0, .87);
+	color: rgba(255, 255, 255, 0.87);
 }
 
 .alarm__label {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .alarm__options {
-  display: none;
+	display: none;
 }
 
 .alarm__select {
-  font-size: 24px;
-  margin: 0 0 0 12px;
-  vertical-align: 18%;
+	font-size: 24px;
+	margin: 0 0 0 12px;
+	vertical-align: 18%;
 }
 
 /* Display -------------------------------------------------------------------*/
 .display {
-  color: rgba(0, 0, 0, .87);
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16vw;
-  padding-top: 32vh;
-  text-align: center;
+	color: rgba(255, 255, 255, 0.87);
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16vw;
+	padding-top: 32vh;
+	text-align: center;
 }
 
 .display__date {
-  font-size: 4vw;
+	font-size: 4vw;
 }
 
 .display__period {
-  margin: 0 0 0 4vw;
+	margin: 0 0 0 4vw;
 }
 
 @media (min-width: 800px) {
 
-.display {
-  font-size: 8vw;
-}
+	.display {
+		font-size: 8vw;
+	}
 
-.display__date {
-  font-size: 2vw;
-}
+	.display__date {
+		font-size: 2vw;
+	}
 
-.display__period {
-  margin: 0 0 0 2vw;
-}
+	.display__period {
+		margin: 0 0 0 2vw;
+	}
 
 }
 
 /* Settings ------------------------------------------------------------------*/
 .settings {
-  color: rgba(0, 0, 0, .87);
-  font-family: 'Source Sans Pro', sans-serif;
+	color: rgba(255, 255, 255, 0.87);
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .settings--active .settings__icon {
-  color: #2196f3;
+	color: #2196f3;
 }
 
 .settings--active .settings__options {
-  display: block;
-  position: absolute;
-  right: 20px;
-  top: 64px;
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 64px;
 }
 
 .settings__checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: white;
-  border-radius: 3px;
-  border: 2px solid #2196f3;
-  cursor: pointer;
-  height: 36px;
-  margin: 0 0 0 12px;
-  outline: none !important;
-  vertical-align: -64%;
-  width: 36px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: black;
+	border-radius: 3px;
+	border: 2px solid #2196f3;
+	cursor: pointer;
+	height: 36px;
+	margin: 0 0 0 12px;
+	outline: none !important;
+	vertical-align: -64%;
+	width: 36px;
 }
 
 .settings__checkbox:checked {
-  background: #2196f3;
+	background: #2196f3;
 }
 
 .settings__icon {
-  color: rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-  float: right;
-  font-size: 24px;
+	color: rgba(255, 255, 255, 0.50);
+	cursor: pointer;
+	float: right;
+	font-size: 24px;
 }
 
 .settings__icon:hover {
-  color: #2196f3;
+	color: #2196f3;
 }
 
 .settings__label {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .settings__options {
-  display: none;
+	display: none;
 }
